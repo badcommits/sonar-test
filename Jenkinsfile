@@ -5,7 +5,7 @@ node(docker){
     def GIT_REPO = "https://github.com/badcommits/sonar-test.git"
 
     stage('SCM Checkout') {
-        git credentialsId: GIT_CREDS, url: GIT_REPO, branch: GIT_BRANCH
+        git branch: GIT_BRANCH, credentialsId: GIT_CREDS, url: GIT_REPO
     }
 
     stage('SonarQube Analysis') {
