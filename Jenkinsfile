@@ -1,7 +1,7 @@
 node(docker){
 
     stage('SCM Checkout') {
-        git credentialsId: 'github', url: 'https://github.com/badcommits/sonar-test.git'
+        git credentialsId: 'github', url: 'https://github.com/badcommits/sonar-test.git, branch: 'main'
     }
 
     stage('SonarQube Analysis') {
