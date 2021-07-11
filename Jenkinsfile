@@ -1,6 +1,6 @@
-//def label = "docker"
+def label = "docker"
 
-node(){
+node{
 
     def GIT_BRANCH = "main"
     def GIT_CREDS = "github"
