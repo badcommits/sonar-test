@@ -1,1 +1,1 @@
-let message = "This is a test to seeif it's working correctly"
+let message = "This is a test to see if it's working correctly"
